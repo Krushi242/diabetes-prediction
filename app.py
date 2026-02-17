@@ -68,17 +68,18 @@ def save_to_google_sheet(data):
         sheet = client.open("user_data").sheet1  # <-- CHANGE if needed
 
         sheet.append_row([
-            data["gender"],
-            data["age"],
-            data["hypertension"],
-            data["heart_disease"],
-            data["smoking_history"],
-            data["bmi"],
-            data["HbA1c_level"],
-            data["blood_glucose_level"],
-            data["prediction"],
-            data["probability"]
+            str(data["gender"]),
+            int(data["age"]),
+            int(data["hypertension"]),
+            int(data["heart_disease"]),
+            str(data["smoking_history"]),
+            float(data["bmi"]),
+            float(data["HbA1c_level"]),
+            float(data["blood_glucose_level"]),
+            int(data["prediction"]),
+            float(data["probability"])
         ])
+
 
         return True
 
