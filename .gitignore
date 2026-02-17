@@ -1,0 +1,7 @@
+diabetes_model.pkl
+*.pkl
+__pycache__/
+data/user_data.csv
+credentials.json
+credentials.json.json
+.streamlit/
